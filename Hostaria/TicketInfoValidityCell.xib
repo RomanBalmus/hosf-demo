@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketinfovaliditycell" rowHeight="70" id="hns-rN-jIH" customClass="TicketInfoValidityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hns-rN-jIH" id="QkS-dn-cIc">
+                <frame key="frameInset" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-To-RH3">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="j10-i1-Dag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-HB-SvR">
+                        <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MQh-N5-aiw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iln-To-RH3" firstAttribute="leading" secondItem="QkS-dn-cIc" secondAttribute="leadingMargin" id="GqV-D1-Vtf"/>
+                    <constraint firstItem="oEr-HB-SvR" firstAttribute="top" secondItem="QkS-dn-cIc" secondAttribute="top" id="O5b-bZ-kbU"/>
+                    <constraint firstItem="Iln-To-RH3" firstAttribute="top" secondItem="QkS-dn-cIc" secondAttribute="topMargin" constant="21" id="X3B-Fa-k7j"/>
+                    <constraint firstItem="Iln-To-RH3" firstAttribute="bottom" secondItem="QkS-dn-cIc" secondAttribute="bottomMargin" id="XVL-LL-SPx"/>
+                    <constraint firstItem="Iln-To-RH3" firstAttribute="trailing" secondItem="QkS-dn-cIc" secondAttribute="trailingMargin" id="fBp-zu-zf9"/>
+                    <constraint firstItem="oEr-HB-SvR" firstAttribute="leading" secondItem="QkS-dn-cIc" secondAttribute="leading" id="iT4-XR-TIx"/>
+                    <constraint firstItem="oEr-HB-SvR" firstAttribute="centerX" secondItem="Iln-To-RH3" secondAttribute="centerX" id="zBs-iO-OBh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="validityLabel" destination="Iln-To-RH3" id="q3Y-Sp-f1V"/>
+            </connections>
+            <point key="canvasLocation" x="615" y="246"/>
+        </tableViewCell>
+    </objects>
+</document>

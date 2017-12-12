@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StandNoMapDetailViewController">
+            <connections>
+                <outlet property="legendButton" destination="NBY-rt-drc" id="ZVs-Ef-t9A"/>
+                <outlet property="theMap" destination="FvR-xO-X3P" id="jz1-9J-Hi3"/>
+                <outlet property="view" destination="CIL-Mc-K1f" id="7kv-v4-JgM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CIL-Mc-K1f">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvR-xO-X3P"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBY-rt-drc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="P4T-eA-R3D"/>
+                        <constraint firstAttribute="height" constant="43" id="U7a-dw-iho"/>
+                    </constraints>
+                    <state key="normal" image="legend_brown">
+                        <color key="titleColor" red="0.43529411759999997" green="0.1960784314" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="legend_grey"/>
+                    <state key="highlighted" image="legend_grey"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FvR-xO-X3P" firstAttribute="top" secondItem="CIL-Mc-K1f" secondAttribute="topMargin" id="AM2-pX-OhE"/>
+                <constraint firstItem="NBY-rt-drc" firstAttribute="trailing" secondItem="CIL-Mc-K1f" secondAttribute="trailingMargin" id="Qd5-QM-mvO"/>
+                <constraint firstAttribute="bottom" secondItem="NBY-rt-drc" secondAttribute="bottom" constant="11" id="dLI-lh-M3x"/>
+                <constraint firstAttribute="bottom" secondItem="FvR-xO-X3P" secondAttribute="bottom" id="gvS-4X-2hE"/>
+                <constraint firstAttribute="trailing" secondItem="FvR-xO-X3P" secondAttribute="trailing" id="l5b-ZW-SqY"/>
+                <constraint firstItem="FvR-xO-X3P" firstAttribute="leading" secondItem="CIL-Mc-K1f" secondAttribute="leading" id="zB3-Br-DQd"/>
+            </constraints>
+            <point key="canvasLocation" x="750.5" y="-399.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="legend_brown" width="18" height="25"/>
+        <image name="legend_grey" width="18" height="25"/>
+    </resources>
+</document>

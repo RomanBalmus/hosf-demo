@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="insertDataCell" rowHeight="60" id="wJP-vy-6zz" customClass="InsertDataCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="center" tableViewCell="wJP-vy-6zz" id="2hF-iG-hEj">
+                <frame key="frameInset" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fLs-3z-n4I">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="086-LB-miw"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="SWI-OY-Ah9"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-HZ-jYo">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ayK-JH-dfy"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="mWw-LJ-jkp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="fLs-3z-n4I" firstAttribute="top" secondItem="2hF-iG-hEj" secondAttribute="top" constant="7" id="4Cs-jG-cS0"/>
+                    <constraint firstItem="ZeD-HZ-jYo" firstAttribute="trailing" secondItem="fLs-3z-n4I" secondAttribute="trailing" id="5sn-5R-gCx"/>
+                    <constraint firstItem="ZeD-HZ-jYo" firstAttribute="leading" secondItem="fLs-3z-n4I" secondAttribute="leading" id="CuK-Fr-13M"/>
+                    <constraint firstItem="fLs-3z-n4I" firstAttribute="centerX" secondItem="2hF-iG-hEj" secondAttribute="centerX" id="JQw-0P-UJQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fLs-3z-n4I" secondAttribute="trailing" constant="52" id="P0W-zU-hlt"/>
+                    <constraint firstItem="ZeD-HZ-jYo" firstAttribute="top" secondItem="fLs-3z-n4I" secondAttribute="top" id="a8d-hT-4rf"/>
+                    <constraint firstItem="ZeD-HZ-jYo" firstAttribute="bottom" secondItem="fLs-3z-n4I" secondAttribute="bottom" id="fPh-2G-RJ1"/>
+                    <constraint firstItem="fLs-3z-n4I" firstAttribute="leading" secondItem="2hF-iG-hEj" secondAttribute="leadingMargin" constant="52" id="jrT-1h-zI6"/>
+                    <constraint firstAttribute="bottom" secondItem="fLs-3z-n4I" secondAttribute="bottom" constant="7" id="tNd-5a-gs3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="inputTextField" destination="ZeD-HZ-jYo" id="UpB-fo-qnq"/>
+            </connections>
+            <point key="canvasLocation" x="627" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_bg" width="226" height="6"/>
+    </resources>
+</document>

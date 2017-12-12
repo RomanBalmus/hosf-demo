@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SponsorListViewController">
+            <connections>
+                <outlet property="myTableView" destination="q7e-Kk-Bpz" id="xAB-B1-G4c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-Kk-Bpz">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mQl-EQ-aJc"/>
+                        <outlet property="delegate" destination="-1" id="vkT-K5-GFJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q7e-Kk-Bpz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="52o-yC-mfo"/>
+                <constraint firstAttribute="bottom" secondItem="q7e-Kk-Bpz" secondAttribute="bottom" id="9sS-jo-tu8"/>
+                <constraint firstAttribute="trailing" secondItem="q7e-Kk-Bpz" secondAttribute="trailing" id="S4Q-27-jsH"/>
+                <constraint firstItem="q7e-Kk-Bpz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lfW-NF-dkY"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="q7e-Kk-Bpz"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="52o-yC-mfo"/>
+                    <exclude reference="9sS-jo-tu8"/>
+                    <exclude reference="S4Q-27-jsH"/>
+                    <exclude reference="lfW-NF-dkY"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="q7e-Kk-Bpz"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="52o-yC-mfo"/>
+                    <include reference="9sS-jo-tu8"/>
+                    <include reference="S4Q-27-jsH"/>
+                    <include reference="lfW-NF-dkY"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

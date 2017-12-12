@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomSheetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0F-Rd-Ncc">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1K-6m-GEO">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9B6-8g-dje"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="15"/>
+                            <color key="textColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oS-uc-Bgy">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="rAz-Un-WsO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="12"/>
+                            <color key="textColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9oS-uc-Bgy" firstAttribute="top" secondItem="J1K-6m-GEO" secondAttribute="bottom" constant="8" symbolic="YES" id="97g-Qf-fGF"/>
+                        <constraint firstItem="J1K-6m-GEO" firstAttribute="leading" secondItem="9oS-uc-Bgy" secondAttribute="leading" id="Lbp-at-BSq"/>
+                        <constraint firstAttribute="bottom" secondItem="9oS-uc-Bgy" secondAttribute="bottom" constant="20" id="T9W-1K-dra"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="UWT-D7-zuc"/>
+                        <constraint firstItem="J1K-6m-GEO" firstAttribute="leading" secondItem="e0F-Rd-Ncc" secondAttribute="leadingMargin" id="eE8-sP-CHx"/>
+                        <constraint firstItem="J1K-6m-GEO" firstAttribute="trailing" secondItem="9oS-uc-Bgy" secondAttribute="trailing" id="haJ-eg-kQE"/>
+                        <constraint firstAttribute="trailing" secondItem="J1K-6m-GEO" secondAttribute="trailing" id="ngu-d6-HyI"/>
+                        <constraint firstItem="J1K-6m-GEO" firstAttribute="top" secondItem="e0F-Rd-Ncc" secondAttribute="top" constant="20" id="p3Y-Ld-0LA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01Y-3W-Lrz">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="NO5-ht-870"/>
+                    </constraints>
+                    <state key="normal" image="direction"/>
+                    <connections>
+                        <action selector="directionButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KcF-U2-EIf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e0F-Rd-Ncc" firstAttribute="centerY" secondItem="01Y-3W-Lrz" secondAttribute="centerY" id="ImS-Eg-FQK"/>
+                <constraint firstItem="e0F-Rd-Ncc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O09-VE-Fcv"/>
+                <constraint firstItem="e0F-Rd-Ncc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bES-jS-K1L"/>
+                <constraint firstItem="01Y-3W-Lrz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hgB-Et-owZ"/>
+                <constraint firstItem="01Y-3W-Lrz" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" constant="1" id="o6A-tQ-p9M"/>
+                <constraint firstItem="01Y-3W-Lrz" firstAttribute="leading" secondItem="e0F-Rd-Ncc" secondAttribute="trailing" constant="7" id="tf7-H3-6AN"/>
+            </constraints>
+            <connections>
+                <outlet property="container" destination="e0F-Rd-Ncc" id="zNw-Xg-M5Q"/>
+                <outlet property="directionBtn" destination="01Y-3W-Lrz" id="IK2-23-AuZ"/>
+                <outlet property="lblDescription" destination="9oS-uc-Bgy" id="3U2-l1-Tq9"/>
+                <outlet property="lblTitle" destination="J1K-6m-GEO" id="SxB-gr-sIY"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="direction" width="48" height="48"/>
+    </resources>
+</document>

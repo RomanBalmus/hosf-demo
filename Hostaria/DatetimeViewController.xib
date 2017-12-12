@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatetimeViewController">
+            <connections>
+                <outlet property="cancelButton" destination="tHn-Xe-Hn5" id="cHM-3F-hYd"/>
+                <outlet property="collectionView" destination="Lc3-g0-pOa" id="Noi-2D-ctL"/>
+                <outlet property="popUpView" destination="tHz-Se-yI1" id="ipJ-fG-AbE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-Se-yI1">
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lc3-g0-pOa">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="RZg-JY-MCk"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lqY-4h-Hdx">
+                                <size key="itemSize" width="95" height="81"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Ase-Ae-TIz"/>
+                                <outlet property="delegate" destination="-1" id="WPw-Gc-b2V"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHn-Xe-Hn5">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="Xbc-NA-B25"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="20"/>
+                            <state key="normal" title="Annulla">
+                                <color key="titleColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="3Qb-LQ-k3Y"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona il giorno della partecipazione:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-IT-Akr">
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="OBH-KB-Lrc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="21"/>
+                            <color key="textColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tHn-Xe-Hn5" secondAttribute="trailing" constant="13" id="4Mo-H6-Pxg"/>
+                        <constraint firstItem="tHn-Xe-Hn5" firstAttribute="bottom" secondItem="tHz-Se-yI1" secondAttribute="bottomMargin" id="JNp-rr-zLG"/>
+                        <constraint firstItem="4WK-IT-Akr" firstAttribute="top" secondItem="tHz-Se-yI1" secondAttribute="top" constant="78" id="KsC-4P-LHS"/>
+                        <constraint firstItem="Lc3-g0-pOa" firstAttribute="leading" secondItem="tHz-Se-yI1" secondAttribute="leadingMargin" id="Poo-0g-s9l"/>
+                        <constraint firstItem="Lc3-g0-pOa" firstAttribute="centerY" secondItem="tHz-Se-yI1" secondAttribute="centerY" id="TaU-Qx-44k"/>
+                        <constraint firstItem="Lc3-g0-pOa" firstAttribute="leading" secondItem="tHz-Se-yI1" secondAttribute="leading" constant="8" id="XW2-Ac-QhP"/>
+                        <constraint firstItem="tHn-Xe-Hn5" firstAttribute="centerX" secondItem="Lc3-g0-pOa" secondAttribute="centerX" id="bTn-Ex-UnS"/>
+                        <constraint firstItem="Lc3-g0-pOa" firstAttribute="trailing" secondItem="tHz-Se-yI1" secondAttribute="trailingMargin" id="cGC-Jz-4nX"/>
+                        <constraint firstItem="4WK-IT-Akr" firstAttribute="leading" secondItem="tHn-Xe-Hn5" secondAttribute="leading" id="e5O-ku-rQd"/>
+                        <constraint firstItem="tHn-Xe-Hn5" firstAttribute="leading" secondItem="tHz-Se-yI1" secondAttribute="leading" constant="12" id="nqv-fa-Po5"/>
+                        <constraint firstItem="4WK-IT-Akr" firstAttribute="trailing" secondItem="tHn-Xe-Hn5" secondAttribute="trailing" id="vAw-8C-Cfz"/>
+                        <constraint firstAttribute="trailing" secondItem="Lc3-g0-pOa" secondAttribute="trailing" constant="8" id="wQR-pH-P4G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tHz-Se-yI1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ADU-VA-3mS"/>
+                <constraint firstItem="tHz-Se-yI1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="alj-H5-K10"/>
+                <constraint firstAttribute="trailing" secondItem="tHz-Se-yI1" secondAttribute="trailing" constant="20" id="r6X-iw-bmJ"/>
+                <constraint firstItem="tHz-Se-yI1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="s2L-fu-B2m"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

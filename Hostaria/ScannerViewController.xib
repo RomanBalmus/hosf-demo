@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScannerViewController">
+            <connections>
+                <outlet property="scannView" destination="TaL-aP-tfb" id="FHO-Tb-BwG"/>
+                <outlet property="scannerImageView" destination="VDC-ul-uln" id="V0k-Fr-X77"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaL-aP-tfb">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDC-ul-uln"/>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VDC-ul-uln" firstAttribute="top" secondItem="TaL-aP-tfb" secondAttribute="top" constant="50" id="5Ct-8Q-tna"/>
+                        <constraint firstItem="VDC-ul-uln" firstAttribute="centerX" secondItem="TaL-aP-tfb" secondAttribute="centerX" id="A0g-J1-tg4"/>
+                        <constraint firstItem="VDC-ul-uln" firstAttribute="centerY" secondItem="TaL-aP-tfb" secondAttribute="centerY" id="NUh-at-Lm8"/>
+                        <constraint firstItem="VDC-ul-uln" firstAttribute="leading" secondItem="TaL-aP-tfb" secondAttribute="leading" constant="50" id="uZx-9d-mp3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TaL-aP-tfb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IZX-eM-xdz"/>
+                <constraint firstAttribute="bottom" secondItem="TaL-aP-tfb" secondAttribute="bottom" id="rZr-9a-gCc"/>
+                <constraint firstAttribute="trailing" secondItem="TaL-aP-tfb" secondAttribute="trailing" id="sm6-MT-Qx9"/>
+                <constraint firstItem="TaL-aP-tfb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xdC-sM-BvB"/>
+            </constraints>
+            <point key="canvasLocation" x="583" y="359"/>
+        </view>
+    </objects>
+</document>

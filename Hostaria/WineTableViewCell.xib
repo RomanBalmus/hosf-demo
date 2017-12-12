@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6Ol-e2-xeD" customClass="WineTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO2-UZ-8s2">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prezzo (€)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4g-8o-n7H">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="170" id="9zy-SS-fHa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vini" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsZ-qq-I2C">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="NuQ-uA-tWH"/>
+                                <constraint firstAttribute="height" constant="29" id="hYZ-Rf-7m8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96140389179999997" green="1" blue="0.71724560410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="TsZ-qq-I2C" firstAttribute="firstBaseline" secondItem="k4g-8o-n7H" secondAttribute="firstBaseline" id="DQb-vk-ZrO"/>
+                        <constraint firstItem="TsZ-qq-I2C" firstAttribute="centerY" secondItem="KO2-UZ-8s2" secondAttribute="centerY" id="Ilx-P2-Xhw"/>
+                        <constraint firstItem="TsZ-qq-I2C" firstAttribute="baseline" secondItem="k4g-8o-n7H" secondAttribute="baseline" id="Tx6-WL-0l4"/>
+                        <constraint firstItem="TsZ-qq-I2C" firstAttribute="leading" secondItem="KO2-UZ-8s2" secondAttribute="leading" constant="18" id="VI7-Ae-A8w"/>
+                        <constraint firstItem="k4g-8o-n7H" firstAttribute="trailing" secondItem="KO2-UZ-8s2" secondAttribute="trailingMargin" id="c2p-oX-41V"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KO2-UZ-8s2" secondAttribute="trailing" id="Snl-ZH-n1z"/>
+                <constraint firstItem="KO2-UZ-8s2" firstAttribute="leading" secondItem="6Ol-e2-xeD" secondAttribute="leading" id="cRh-KL-BDZ"/>
+                <constraint firstAttribute="bottom" secondItem="KO2-UZ-8s2" secondAttribute="bottom" id="qIb-qo-9uy"/>
+                <constraint firstItem="KO2-UZ-8s2" firstAttribute="top" secondItem="6Ol-e2-xeD" secondAttribute="top" id="wTM-0k-oqX"/>
+            </constraints>
+            <point key="canvasLocation" x="565.5" y="380.5"/>
+        </view>
+    </objects>
+</document>

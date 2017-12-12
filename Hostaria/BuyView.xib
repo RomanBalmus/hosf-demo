@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buy" rowHeight="65" id="C1c-JW-Iyd" customClass="BuyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C1c-JW-Iyd" id="use-XP-vla">
+                <frame key="frameInset" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ih7-7g-3Dj">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="f8b-eU-ESu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticket" translatesAutoresizingMaskIntoConstraints="NO" id="abY-R8-wm8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="ThB-Xe-dJT"/>
+                            <constraint firstAttribute="width" constant="55" id="c8F-SE-qPa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acquista il tuo biglietto in offerta attraverso l'app Hostaria" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-w2-sOV">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Z90-ZZ-Nxg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="abY-R8-wm8" firstAttribute="centerY" secondItem="use-XP-vla" secondAttribute="centerY" id="Ztc-Us-5oL"/>
+                    <constraint firstItem="abY-R8-wm8" firstAttribute="leading" secondItem="use-XP-vla" secondAttribute="leadingMargin" id="a82-dh-eM1"/>
+                    <constraint firstItem="dn5-w2-sOV" firstAttribute="trailing" secondItem="ih7-7g-3Dj" secondAttribute="trailing" constant="-15" id="ayW-Dc-2gu"/>
+                    <constraint firstItem="ih7-7g-3Dj" firstAttribute="top" secondItem="dn5-w2-sOV" secondAttribute="top" id="gyE-ZY-em5"/>
+                    <constraint firstItem="dn5-w2-sOV" firstAttribute="leading" secondItem="ih7-7g-3Dj" secondAttribute="leading" constant="15" id="hL8-fe-n6N"/>
+                    <constraint firstItem="ih7-7g-3Dj" firstAttribute="bottom" secondItem="dn5-w2-sOV" secondAttribute="bottom" id="iJy-yj-tfZ"/>
+                    <constraint firstItem="dn5-w2-sOV" firstAttribute="top" secondItem="use-XP-vla" secondAttribute="topMargin" constant="-4" id="lUU-5l-9zv"/>
+                    <constraint firstItem="dn5-w2-sOV" firstAttribute="leading" secondItem="use-XP-vla" secondAttribute="leadingMargin" constant="45" id="nQM-H1-VPa"/>
+                    <constraint firstItem="abY-R8-wm8" firstAttribute="centerY" secondItem="dn5-w2-sOV" secondAttribute="centerY" id="tHk-VS-Nax"/>
+                    <constraint firstItem="abY-R8-wm8" firstAttribute="top" secondItem="use-XP-vla" secondAttribute="topMargin" constant="2" id="wB3-6z-LKR"/>
+                    <constraint firstItem="ih7-7g-3Dj" firstAttribute="centerX" secondItem="use-XP-vla" secondAttribute="centerX" constant="15" id="yM7-P5-OER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="952" y="-19.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ticket" width="221" height="167"/>
+    </resources>
+</document>

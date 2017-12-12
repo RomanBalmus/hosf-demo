@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3x1-jJ-ULY" customClass="ExpandableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g14-yf-lXV">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="36w-EN-H9c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-KT-XYx">
+                    <color key="backgroundColor" red="0.79607843140000001" green="0.73333333329999995" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="7fU-iE-Oml"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="A - Z" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syp-KG-aSp">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="KLo-Yy-WUe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g14-yf-lXV" firstAttribute="centerY" secondItem="syp-KG-aSp" secondAttribute="centerY" id="Ojf-OC-mkD"/>
+                <constraint firstItem="syp-KG-aSp" firstAttribute="trailing" secondItem="3x1-jJ-ULY" secondAttribute="trailingMargin" id="Phk-CI-2Tq"/>
+                <constraint firstItem="syp-KG-aSp" firstAttribute="centerY" secondItem="3x1-jJ-ULY" secondAttribute="centerY" id="cIx-EX-rKg"/>
+                <constraint firstItem="syp-KG-aSp" firstAttribute="leading" secondItem="g14-yf-lXV" secondAttribute="trailing" constant="8" symbolic="YES" id="dvP-P4-qef"/>
+                <constraint firstItem="bJI-KT-XYx" firstAttribute="leading" secondItem="3x1-jJ-ULY" secondAttribute="leading" id="ggZ-I1-roU"/>
+                <constraint firstItem="g14-yf-lXV" firstAttribute="centerY" secondItem="3x1-jJ-ULY" secondAttribute="centerY" id="gpK-VI-veX"/>
+                <constraint firstItem="g14-yf-lXV" firstAttribute="leading" secondItem="3x1-jJ-ULY" secondAttribute="leadingMargin" id="tEO-C6-e4h"/>
+                <constraint firstAttribute="bottom" secondItem="bJI-KT-XYx" secondAttribute="bottom" id="y1O-sM-AZO"/>
+                <constraint firstAttribute="trailing" secondItem="bJI-KT-XYx" secondAttribute="trailing" id="ylT-ZN-2pF"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTitle" destination="g14-yf-lXV" id="IX9-0x-vGB"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="226"/>
+        </view>
+    </objects>
+</document>

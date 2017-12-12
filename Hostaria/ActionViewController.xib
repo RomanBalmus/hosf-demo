@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionViewController">
+            <connections>
+                <outlet property="coupleBtn" destination="gnM-V8-I7q" id="8wj-RI-p1E"/>
+                <outlet property="coupleContainer" destination="TU8-kp-0ia" id="8Zx-Go-mqQ"/>
+                <outlet property="coupleTextLabel" destination="wMc-Hv-qi9" id="FFA-6C-nIG"/>
+                <outlet property="dismissBtn" destination="Azp-Oj-W3f" id="Egm-Wb-Asc"/>
+                <outlet property="receiveBtn" destination="MlD-eI-hAz" id="J6c-nj-Nbk"/>
+                <outlet property="receiveContainer" destination="3dg-kn-ycN" id="KIp-Yi-Dq8"/>
+                <outlet property="receiveTextLabel" destination="ZL6-oS-FVG" id="UOj-UO-ycH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-GE-msh">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona un'azione:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfN-pu-9ST">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="5NN-93-2lT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="24"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-kn-ycN">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlD-eI-hAz">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="4HP-ra-ZbY"/>
+                                    </constraints>
+                                    <state key="normal" image="rcvnormal"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-oS-FVG">
+                                    <string key="text">-Ricevi un biglietto da un biglietto cartaceo! 
+Leggi il codice QR in alto a desta nel biglietto. 
+
+ -Ricevi un biglietto da un'altra persona! Leggi il codice QR generato dalla funzione TRASFERISCI in alto a destra nel dettaglio biglietto (NB. il biglietto non deve essere utilizato)</string>
+                                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="18"/>
+                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RICEVI BIGLIETTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otM-kE-WW4">
+                                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="20"/>
+                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ZL6-oS-FVG" firstAttribute="bottom" secondItem="3dg-kn-ycN" secondAttribute="bottomMargin" id="IVZ-7h-ny8"/>
+                                <constraint firstItem="MlD-eI-hAz" firstAttribute="top" secondItem="otM-kE-WW4" secondAttribute="bottom" constant="61" id="OLR-oF-Som"/>
+                                <constraint firstItem="otM-kE-WW4" firstAttribute="trailing" secondItem="3dg-kn-ycN" secondAttribute="trailingMargin" id="OjM-Fl-dYU"/>
+                                <constraint firstAttribute="bottom" secondItem="MlD-eI-hAz" secondAttribute="bottom" constant="62" id="Peg-vN-2TE"/>
+                                <constraint firstItem="otM-kE-WW4" firstAttribute="leading" secondItem="3dg-kn-ycN" secondAttribute="leadingMargin" id="Ruu-O5-Qpj"/>
+                                <constraint firstItem="otM-kE-WW4" firstAttribute="top" secondItem="3dg-kn-ycN" secondAttribute="topMargin" id="bno-aq-AGO"/>
+                                <constraint firstItem="MlD-eI-hAz" firstAttribute="leading" secondItem="ZL6-oS-FVG" secondAttribute="trailing" constant="26" id="et4-aU-RrR"/>
+                                <constraint firstItem="otM-kE-WW4" firstAttribute="leading" secondItem="ZL6-oS-FVG" secondAttribute="leading" id="hlZ-Ed-Aex"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="214" id="jXP-v7-CdP"/>
+                                <constraint firstItem="ZL6-oS-FVG" firstAttribute="top" secondItem="otM-kE-WW4" secondAttribute="bottom" constant="8" symbolic="YES" id="n2U-1Q-Bwh"/>
+                                <constraint firstItem="otM-kE-WW4" firstAttribute="trailing" secondItem="MlD-eI-hAz" secondAttribute="trailing" id="naB-F7-EJM"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU8-kp-0ia">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMc-Hv-qi9">
+                                    <string key="text">-Condividi il biglietto di coppia di un'altra persona con te! Leggi il codice QR generato dalla funzione COPPIA in alto a destra nel biglietto. (NB. il biglietto non deve essere utilizzato)</string>
+                                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="18"/>
+                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnM-V8-I7q">
+                                    <state key="normal" image="rcvcouple"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIGLIETTO DI COPPIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-qo-tv9">
+                                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="20"/>
+                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="gnM-V8-I7q" firstAttribute="leading" secondItem="wMc-Hv-qi9" secondAttribute="trailing" constant="24" id="88d-dn-MUZ"/>
+                                <constraint firstItem="wMc-Hv-qi9" firstAttribute="centerY" secondItem="gnM-V8-I7q" secondAttribute="centerY" id="Bol-2r-Oxx"/>
+                                <constraint firstItem="wMc-Hv-qi9" firstAttribute="top" secondItem="2Ke-qo-tv9" secondAttribute="bottom" constant="8" symbolic="YES" id="Jti-wj-fic"/>
+                                <constraint firstItem="2Ke-qo-tv9" firstAttribute="leading" secondItem="wMc-Hv-qi9" secondAttribute="leading" id="Nbm-nd-D73"/>
+                                <constraint firstItem="2Ke-qo-tv9" firstAttribute="leading" secondItem="TU8-kp-0ia" secondAttribute="leadingMargin" id="bZQ-yE-0Bn"/>
+                                <constraint firstItem="2Ke-qo-tv9" firstAttribute="trailing" secondItem="gnM-V8-I7q" secondAttribute="trailing" id="cju-yp-pFp"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="214" id="gNP-EV-BJ2"/>
+                                <constraint firstItem="2Ke-qo-tv9" firstAttribute="top" secondItem="TU8-kp-0ia" secondAttribute="topMargin" id="gXR-lD-fJD"/>
+                                <constraint firstItem="wMc-Hv-qi9" firstAttribute="bottom" secondItem="TU8-kp-0ia" secondAttribute="bottomMargin" id="h4z-DM-mlb"/>
+                                <constraint firstItem="2Ke-qo-tv9" firstAttribute="trailing" secondItem="TU8-kp-0ia" secondAttribute="trailingMargin" id="nBa-77-Tt3"/>
+                                <constraint firstItem="gnM-V8-I7q" firstAttribute="top" secondItem="2Ke-qo-tv9" secondAttribute="bottom" constant="62" id="zkz-Ds-qkE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3dg-kn-ycN" secondAttribute="trailing" id="3C0-Ls-QRf"/>
+                        <constraint firstItem="3dg-kn-ycN" firstAttribute="top" secondItem="yfN-pu-9ST" secondAttribute="bottom" constant="18" id="J9J-No-yRe"/>
+                        <constraint firstItem="yfN-pu-9ST" firstAttribute="leading" secondItem="bh5-GE-msh" secondAttribute="leadingMargin" id="KuR-nf-huW"/>
+                        <constraint firstItem="3dg-kn-ycN" firstAttribute="leading" secondItem="bh5-GE-msh" secondAttribute="leading" id="Oq3-jw-Jbf"/>
+                        <constraint firstItem="3dg-kn-ycN" firstAttribute="trailing" secondItem="TU8-kp-0ia" secondAttribute="trailing" id="Zmt-jT-dJ4"/>
+                        <constraint firstItem="yfN-pu-9ST" firstAttribute="top" secondItem="bh5-GE-msh" secondAttribute="top" constant="31" id="aBP-6C-O9j"/>
+                        <constraint firstItem="TU8-kp-0ia" firstAttribute="top" secondItem="3dg-kn-ycN" secondAttribute="bottom" constant="18" id="dEf-nM-ts6"/>
+                        <constraint firstAttribute="bottom" secondItem="TU8-kp-0ia" secondAttribute="bottom" constant="15" id="edH-8q-wRJ"/>
+                        <constraint firstItem="3dg-kn-ycN" firstAttribute="leading" secondItem="TU8-kp-0ia" secondAttribute="leading" id="eqf-yP-wiV"/>
+                        <constraint firstItem="3dg-kn-ycN" firstAttribute="centerX" secondItem="yfN-pu-9ST" secondAttribute="centerX" id="nMm-zT-U9p"/>
+                        <constraint firstItem="yfN-pu-9ST" firstAttribute="centerX" secondItem="bh5-GE-msh" secondAttribute="centerX" id="oof-8T-JLa"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-Oj-W3f">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Gkl-P9-rw7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                    <state key="normal" title="ANNULLA">
+                        <color key="titleColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClicked:" destination="-1" eventType="touchUpInside" id="L5i-tU-8BY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bh5-GE-msh" secondAttribute="trailing" id="7Cu-Tw-bCA"/>
+                <constraint firstItem="bh5-GE-msh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bfn-ej-PwL"/>
+                <constraint firstItem="Azp-Oj-W3f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Nqr-83-xV6"/>
+                <constraint firstItem="Azp-Oj-W3f" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="kQ9-Kx-ak4"/>
+                <constraint firstItem="bh5-GE-msh" firstAttribute="centerX" secondItem="Azp-Oj-W3f" secondAttribute="centerX" id="nwV-uf-egt"/>
+                <constraint firstItem="bh5-GE-msh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="4" id="rgy-6T-FiE"/>
+                <constraint firstItem="Azp-Oj-W3f" firstAttribute="top" secondItem="bh5-GE-msh" secondAttribute="bottom" constant="8" symbolic="YES" id="xws-gj-aGT"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="rcvcouple" width="75" height="62"/>
+        <image name="rcvnormal" width="75" height="62"/>
+    </resources>
+</document>

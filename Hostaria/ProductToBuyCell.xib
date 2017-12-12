@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="XHe-Ks-oxy" customClass="ProductToBuyCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XHe-Ks-oxy" id="m8r-gr-bYo">
+                <frame key="frameInset" width="375" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-iE-94Q">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="dYj-tR-A2w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xji-O1-ddQ">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="4cD-3v-l2L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E82-Wr-h1D">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="hEf-Fx-4qi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjX-D5-gL5">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="cvc-Ga-d1l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFX-Bh-qIR">
+                        <color key="backgroundColor" red="0.79607843140000001" green="0.73333333329999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="14"/>
+                        <state key="normal" title="AGGIUNGI AL CARRELLO">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.86021392617449666" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="tFX-Bh-qIR" firstAttribute="leading" secondItem="m8r-gr-bYo" secondAttribute="leadingMargin" constant="49" id="0HW-9s-Vy9"/>
+                    <constraint firstItem="Hha-iE-94Q" firstAttribute="top" secondItem="m8r-gr-bYo" secondAttribute="topMargin" constant="23" id="9LZ-yA-yH4"/>
+                    <constraint firstItem="Xji-O1-ddQ" firstAttribute="top" secondItem="m8r-gr-bYo" secondAttribute="topMargin" constant="9" id="9Xh-TC-e7A"/>
+                    <constraint firstItem="tFX-Bh-qIR" firstAttribute="centerX" secondItem="m8r-gr-bYo" secondAttribute="centerX" constant="21" id="Jaw-nc-sqi"/>
+                    <constraint firstItem="hjX-D5-gL5" firstAttribute="top" secondItem="E82-Wr-h1D" secondAttribute="bottom" constant="8" symbolic="YES" id="LRc-pL-DwM"/>
+                    <constraint firstItem="Xji-O1-ddQ" firstAttribute="leading" secondItem="Hha-iE-94Q" secondAttribute="trailing" constant="8" symbolic="YES" id="R8i-aU-Thi"/>
+                    <constraint firstItem="Xji-O1-ddQ" firstAttribute="leading" secondItem="E82-Wr-h1D" secondAttribute="leading" id="Ugk-Ml-QCl"/>
+                    <constraint firstItem="Xji-O1-ddQ" firstAttribute="trailing" secondItem="E82-Wr-h1D" secondAttribute="trailing" id="XGz-Ih-fRs"/>
+                    <constraint firstItem="Hha-iE-94Q" firstAttribute="leading" secondItem="m8r-gr-bYo" secondAttribute="leadingMargin" id="ele-OB-UnL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tFX-Bh-qIR" secondAttribute="bottom" constant="10" id="gI3-ZU-1FD"/>
+                    <constraint firstItem="E82-Wr-h1D" firstAttribute="trailing" secondItem="hjX-D5-gL5" secondAttribute="trailing" id="hOh-QZ-xgu"/>
+                    <constraint firstItem="E82-Wr-h1D" firstAttribute="top" secondItem="Xji-O1-ddQ" secondAttribute="bottom" constant="8" symbolic="YES" id="m4z-78-EMi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hha-iE-94Q" secondAttribute="bottom" constant="58" id="vG9-iT-sbT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xji-O1-ddQ" secondAttribute="trailing" constant="7" id="yPH-Zw-GOe"/>
+                    <constraint firstItem="E82-Wr-h1D" firstAttribute="leading" secondItem="hjX-D5-gL5" secondAttribute="leading" id="zoo-WO-Vka"/>
+                    <constraint firstItem="tFX-Bh-qIR" firstAttribute="top" secondItem="hjX-D5-gL5" secondAttribute="bottom" constant="8" symbolic="YES" id="zw1-W0-rh4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addToCartButton" destination="tFX-Bh-qIR" id="Wrj-X1-kNl"/>
+                <outlet property="productCompany" destination="E82-Wr-h1D" id="hPS-1O-c2F"/>
+                <outlet property="productName" destination="Xji-O1-ddQ" id="82x-sp-a8o"/>
+                <outlet property="productPrice" destination="hjX-D5-gL5" id="ofY-aF-3lM"/>
+                <outlet property="productTypeIcon" destination="Hha-iE-94Q" id="m0x-0W-SPO"/>
+            </connections>
+            <point key="canvasLocation" x="-120.5" y="17"/>
+        </tableViewCell>
+    </objects>
+</document>

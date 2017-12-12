@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="n3w-at-eLC" customClass="SearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3w-at-eLC" id="27J-7e-ein">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-Q6-gt4">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="xBR-nv-x85"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dU2-Q6-gt4" firstAttribute="trailing" secondItem="27J-7e-ein" secondAttribute="trailingMargin" id="40M-P1-vX7"/>
+                    <constraint firstItem="dU2-Q6-gt4" firstAttribute="bottom" secondItem="27J-7e-ein" secondAttribute="bottomMargin" id="EJ1-F3-Ich"/>
+                    <constraint firstItem="dU2-Q6-gt4" firstAttribute="top" secondItem="27J-7e-ein" secondAttribute="topMargin" id="hi9-ag-bVh"/>
+                    <constraint firstItem="dU2-Q6-gt4" firstAttribute="leading" secondItem="27J-7e-ein" secondAttribute="leadingMargin" id="mYC-qW-MzC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbl" destination="dU2-Q6-gt4" id="93T-Dc-V7x"/>
+            </connections>
+            <point key="canvasLocation" x="514" y="267"/>
+        </tableViewCell>
+    </objects>
+</document>

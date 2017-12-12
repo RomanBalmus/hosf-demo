@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCell" id="9Zl-2v-5Zy" customClass="DateCell">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendartemplate" translatesAutoresizingMaskIntoConstraints="NO" id="anu-Tx-w3g"/>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aZ-ck-zZ6">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13" id="zAu-1B-Maa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lC-LQ-Gdi">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="b9G-qU-aRW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="15"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enV-sO-9Ab">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="UzJ-OA-A9x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="21"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.63921568630000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="anu-Tx-w3g" secondAttribute="bottom" id="3KJ-h7-bf3"/>
+                <constraint firstItem="enV-sO-9Ab" firstAttribute="trailing" secondItem="2lC-LQ-Gdi" secondAttribute="trailing" id="6Sr-mK-qVI"/>
+                <constraint firstItem="anu-Tx-w3g" firstAttribute="top" secondItem="9Zl-2v-5Zy" secondAttribute="top" id="CkF-wd-03T"/>
+                <constraint firstItem="3aZ-ck-zZ6" firstAttribute="leading" secondItem="anu-Tx-w3g" secondAttribute="leading" id="I4x-O3-fRN"/>
+                <constraint firstItem="enV-sO-9Ab" firstAttribute="centerY" secondItem="anu-Tx-w3g" secondAttribute="centerY" id="MfE-Ie-gt5"/>
+                <constraint firstItem="3aZ-ck-zZ6" firstAttribute="trailing" secondItem="enV-sO-9Ab" secondAttribute="trailing" id="PeL-ii-45Z"/>
+                <constraint firstItem="3aZ-ck-zZ6" firstAttribute="leading" secondItem="enV-sO-9Ab" secondAttribute="leading" id="a9L-ro-VJi"/>
+                <constraint firstItem="2lC-LQ-Gdi" firstAttribute="bottom" secondItem="anu-Tx-w3g" secondAttribute="bottom" id="eta-xI-Sbc"/>
+                <constraint firstItem="3aZ-ck-zZ6" firstAttribute="top" secondItem="anu-Tx-w3g" secondAttribute="top" constant="8" id="jyG-Ma-Z8V"/>
+                <constraint firstAttribute="trailing" secondItem="anu-Tx-w3g" secondAttribute="trailing" id="pU8-LW-Zld"/>
+                <constraint firstItem="anu-Tx-w3g" firstAttribute="leading" secondItem="9Zl-2v-5Zy" secondAttribute="leading" id="qCD-c4-fOr"/>
+                <constraint firstItem="3aZ-ck-zZ6" firstAttribute="trailing" secondItem="anu-Tx-w3g" secondAttribute="trailing" id="sBB-qH-M5h"/>
+                <constraint firstItem="enV-sO-9Ab" firstAttribute="leading" secondItem="2lC-LQ-Gdi" secondAttribute="leading" id="zkK-ub-633"/>
+            </constraints>
+            <size key="customSize" width="95" height="81"/>
+            <connections>
+                <outlet property="dayLbl" destination="enV-sO-9Ab" id="wfy-yB-xRe"/>
+                <outlet property="monthLbl" destination="3aZ-ck-zZ6" id="an4-6r-Qug"/>
+                <outlet property="yearLbl" destination="2lC-LQ-Gdi" id="HAA-8P-5iC"/>
+            </connections>
+            <point key="canvasLocation" x="680.5" y="319.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendartemplate" width="95" height="81"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketheadercell" rowHeight="127" id="t6U-5d-2af" customClass="TicketInfoHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t6U-5d-2af" id="dPh-eT-eN2">
+                <frame key="frameInset" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k67-GP-U25">
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.19607843137254902" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="sX2-Mf-JCg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5L-F4-Hoc">
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.19607843137254902" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="nSV-Lg-MNH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hostaria_title" translatesAutoresizingMaskIntoConstraints="NO" id="bei-Xa-zCG">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="fd4-QG-53U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IL FESTIVAL DEL VINO E DELLA VENDEMMIA DI VERONA" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="ssY-H0-tv4">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="0sr-SB-KOK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="14"/>
+                        <color key="textColor" red="0.43529411764705883" green="0.19607843137254902" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ssY-H0-tv4" firstAttribute="trailing" secondItem="k67-GP-U25" secondAttribute="trailing" id="0ob-GR-OXw"/>
+                    <constraint firstItem="ssY-H0-tv4" firstAttribute="leading" secondItem="k67-GP-U25" secondAttribute="leading" id="3Zb-cC-QTA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bei-Xa-zCG" secondAttribute="trailing" constant="67" id="BnE-z7-JtO"/>
+                    <constraint firstItem="bei-Xa-zCG" firstAttribute="centerX" secondItem="dPh-eT-eN2" secondAttribute="centerX" constant="-1" id="ExL-mI-SJB"/>
+                    <constraint firstItem="f5L-F4-Hoc" firstAttribute="top" secondItem="ssY-H0-tv4" secondAttribute="bottom" constant="8" symbolic="YES" id="FdA-zg-So0"/>
+                    <constraint firstItem="f5L-F4-Hoc" firstAttribute="trailing" secondItem="ssY-H0-tv4" secondAttribute="trailing" id="Jsp-BX-EIe"/>
+                    <constraint firstItem="bei-Xa-zCG" firstAttribute="top" secondItem="dPh-eT-eN2" secondAttribute="topMargin" id="Nfk-UG-Mb9"/>
+                    <constraint firstItem="f5L-F4-Hoc" firstAttribute="leading" secondItem="bei-Xa-zCG" secondAttribute="leading" id="aqo-vm-XQb"/>
+                    <constraint firstItem="ssY-H0-tv4" firstAttribute="top" secondItem="k67-GP-U25" secondAttribute="bottom" constant="8" symbolic="YES" id="cVZ-u6-2NK"/>
+                    <constraint firstItem="bei-Xa-zCG" firstAttribute="leading" secondItem="dPh-eT-eN2" secondAttribute="leadingMargin" constant="65" id="dIt-FM-v5D"/>
+                    <constraint firstItem="k67-GP-U25" firstAttribute="top" secondItem="bei-Xa-zCG" secondAttribute="bottom" constant="8" symbolic="YES" id="fiR-Qz-pTk"/>
+                    <constraint firstItem="f5L-F4-Hoc" firstAttribute="leading" secondItem="ssY-H0-tv4" secondAttribute="leading" id="iTX-92-NTO"/>
+                    <constraint firstItem="f5L-F4-Hoc" firstAttribute="trailing" secondItem="bei-Xa-zCG" secondAttribute="trailing" id="oUL-t7-CVX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="f5L-F4-Hoc" secondAttribute="bottom" constant="8" id="qxJ-Ng-sSH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="620" y="194.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hostaria_title" width="160" height="27"/>
+    </resources>
+</document>

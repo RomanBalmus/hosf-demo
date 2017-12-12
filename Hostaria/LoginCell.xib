@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pier-regular.otf">
+            <string>PierSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logincell" rowHeight="105" id="KGk-i7-Jjw" customClass="LoginCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP7-uW-pVr">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="e77-kB-hGS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPL-eu-Qqw">
+                        <fontDescription key="fontDescription" name="PierSans" family="Pier Sans" pointSize="19"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.79607843140000001" green="0.73333333329999995" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UP7-uW-pVr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="1Or-OZ-7vI"/>
+                    <constraint firstItem="UP7-uW-pVr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="540-hM-Lte"/>
+                    <constraint firstItem="FPL-eu-Qqw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mo5-uD-qgC"/>
+                    <constraint firstAttribute="trailing" secondItem="FPL-eu-Qqw" secondAttribute="trailing" id="SOv-Ju-BB9"/>
+                    <constraint firstItem="UP7-uW-pVr" firstAttribute="centerX" secondItem="FPL-eu-Qqw" secondAttribute="centerX" id="aTd-9i-klj"/>
+                    <constraint firstItem="FPL-eu-Qqw" firstAttribute="top" secondItem="UP7-uW-pVr" secondAttribute="bottom" constant="8" symbolic="YES" id="xUy-j3-x4L"/>
+                    <constraint firstItem="FPL-eu-Qqw" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="zl4-U4-ZJu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="loginBtn" destination="FPL-eu-Qqw" id="pHP-qY-kss"/>
+                <outlet property="loginTitle" destination="UP7-uW-pVr" id="yCe-oz-3s8"/>
+            </connections>
+            <point key="canvasLocation" x="722" y="376.5"/>
+        </tableViewCell>
+    </objects>
+</document>
